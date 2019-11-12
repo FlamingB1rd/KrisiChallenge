@@ -2,7 +2,7 @@ package app;
 
 public class Stock
 {
-    protected static int ID = 001;
+    protected static int ID = 1;
     private String stockID;
     private String name;
     private double price;
@@ -10,8 +10,6 @@ public class Stock
 
     public Stock(String name, double price, Category category)
     {
-        stockID = ID + "";
-        ID++;
         this.name = name;
         this.price = price;
         this.category = category;
@@ -19,7 +17,8 @@ public class Stock
 
     public Stock()
     {
-
+        stockID = ID + "";
+        ID++;
     }
 
     public String getStockID()
@@ -56,5 +55,4 @@ public class Stock
     {
         this.category = category;
     }
-
 }

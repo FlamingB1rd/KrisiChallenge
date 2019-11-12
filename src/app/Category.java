@@ -2,13 +2,14 @@ package app;
 
 public class Category
 {
-    private static int ID = Stock.ID;
+    private static int ID = 10;
     private String categoryID;
     private String name;
 
     public Category(String name)
     {
         categoryID = ID + "";
+        ID++;
         this.name = name;
     }
 
